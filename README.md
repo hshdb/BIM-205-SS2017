@@ -1,11 +1,21 @@
 # Übersicht von Systemen zur Wissensorganisation
 
-Diese git-Repository enthält öffentliche Unterlagen zur Lehrveranstaltung
-*Übersicht von Systemen zur Wissensorganisation* die im Sommersemester 2017 an
-der [Hochschule Hannover](https://www.hs-hannover.de/) von Jakob Voß
-veranstaltet wird. Die Veranstaltung findet als Projektmodul in den
-Bachelorstudiengängen Informationsmanagement (BIM-205) und Medizinisches
-Informationsmanagement (BMI-207) statt.
+[Diese git-Repository](https://github.com/hshdb/hsh2017) enthält öffentliche
+Unterlagen zur Lehrveranstaltung *Übersicht von Systemen zur
+Wissensorganisation* die im Sommersemester 2017 an der [Hochschule
+Hannover](https://www.hs-hannover.de/) von Jakob Voß veranstaltet wird. Die
+Veranstaltung findet als Projektmodul in den Bachelorstudiengängen
+Informationsmanagement (BIM-205) und Medizinisches Informationsmanagement
+(BMI-207) statt.
+
+## Ziel des Projektseminars
+
+Eine Kurzvorstellung des Projekt gibt es [hier als
+PDF](https://github.com/hshdb/hsh2017/raw/master/projektvorstellung.pdf).
+Zusammengefasst soll eine Übersicht von Systemen zur Wissensorganisation wie
+Klassifikationen, Thesauri, Ontologien und Normdateiengeschaffen werden. Als
+Grundlage dient dafür das Basel Register of Thesauri, Ontologies &
+Classifications ([BARTOC.org](http://bartoc.org)).
 
 ## Lizenz
 
@@ -16,4 +26,5 @@ verwendet werden.  Die aktuelle Version des Repository steht unter
 
 ## Zeit und Ort
 
-folgen.
+Jeweils Dienstags vom 7. März bis Mitte Juni.
+

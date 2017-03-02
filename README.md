@@ -14,8 +14,8 @@ Eine Kurzvorstellung des Projekt gibt es [hier als
 PDF](https://github.com/hshdb/hsh2017/raw/master/projektvorstellung.pdf).
 Zusammengefasst soll eine Übersicht von Systemen zur Wissensorganisation wie
 Klassifikationen, Thesauri, Ontologien und Normdateiengeschaffen werden. Als
-Grundlage dient dafür das Basel Register of Thesauri, Ontologies &
-Classifications ([BARTOC.org](http://bartoc.org)).
+Grundlage dient dafür das *Basel Register of Thesauri, Ontologies &
+Classifications* ([BARTOC.org](http://bartoc.org)).
 
 ## Lizenz
 
@@ -26,5 +26,6 @@ verwendet werden.  Die aktuelle Version des Repository steht unter
 
 ## Zeit und Ort
 
-Jeweils Dienstags vom 7. März bis Mitte Juni.
-
+* 7. März bis Mitte Juni
+* Dienstags 9:00-13:00 Uhr
+* Expo Plaza 12, Raum 3.17

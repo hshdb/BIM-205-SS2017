@@ -29,3 +29,14 @@ verwendet werden.  Die aktuelle Version des Repository steht unter
 * 7. März bis Mitte Juni
 * Dienstags 9:00-13:00 Uhr
 * Expo Plaza 12, Raum 3.17
+
+## Organisation
+
+Am Projekt nehmen 12 Studierende im 6. Semester Informationsmanagement teil.
+Für die erste Projektphase (ab 7.3.) haben wir uns in drei Arbeitsgruppen
+eingeteilt:
+
+* **Erfassung** von Wissensorganisationssystemen (KOS) in BARTOC 
+* **Analyse** der erfassten KOS bezüzlich Vollständigkeit, Schwerpunkte...
+* **Präsentation** der Sammlung von KOS in BARTOC
+

@@ -26,9 +26,12 @@ verwendet werden.  Die aktuelle Version des Repository steht unter
 
 ## Zeit und Ort
 
-* 7. März bis Mitte Juni
+* 7. März bis 20. Juni
 * Dienstags 9:00-13:00 Uhr
 * Expo Plaza 12, Raum 3.17
+
+Am 20. Juni ist die Abschlusspräsentation aller Projekte um 10:00 Uhr im
+Hörsaal Planet M.
 
 ## Organisation
 

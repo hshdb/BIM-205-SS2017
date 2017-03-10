@@ -3,8 +3,8 @@
 [Diese git-Repository](https://github.com/hshdb/hsh2017) enthält öffentliche
 Unterlagen zur Lehrveranstaltung *Übersicht von Systemen zur
 Wissensorganisation* die im Sommersemester 2017 an der [Hochschule
-Hannover](https://www.hs-hannover.de/) von Jakob Voß veranstaltet wird. Die
-Veranstaltung findet als Projektmodul in den Bachelorstudiengängen
+Hannover](https://www.hs-hannover.de/) (HsH) von Jakob Voß veranstaltet wird.
+Die Veranstaltung findet als Projektmodul in den Bachelorstudiengängen
 Informationsmanagement (BIM-205) und Medizinisches Informationsmanagement
 (BMI-207) statt.
 
@@ -43,3 +43,4 @@ eingeteilt:
 * **Analyse** der erfassten KOS bezüzlich Vollständigkeit, Schwerpunkte...
 * **Präsentation** der Sammlung von KOS in BARTOC
 
+Zur internen Kommunikation gibt es ein geschlossenes Projekt in der Moodle-Instanz der HsH: <https://moodle.hs-hannover.de/course/view.php?id=5307>

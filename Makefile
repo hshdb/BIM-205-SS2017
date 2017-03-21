@@ -3,3 +3,6 @@ einleitung.pdf: einleitung.md
 
 projektvorstellung.pdf: projektvorstellung.md
 	pandoc -t beamer -S $< -o $@
+
+wikidata.pdf: wikidata.md
+	pandoc -t beamer -S $< -o $@

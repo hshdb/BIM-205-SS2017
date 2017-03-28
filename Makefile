@@ -6,3 +6,6 @@ projektvorstellung.pdf: projektvorstellung.md
 
 wikidata.pdf: wikidata.md
 	pandoc -t beamer -S $< -o $@
+
+social-bookmarking.pdf: social-bookmarking.md
+	pandoc -t beamer -S $< -o $@

@@ -26,10 +26,10 @@ SELECT ?prefixes ?titles ?uri ?url ?abstract ?size ?year ?keywords {
     }
 
     # homepage url (just a random one)
-    {
-        SELECT ?url {
-            ?uri foaf:homepage ?url
-        } LIMIT 1
+    OPTIONAL {
+        SELECT ?uri (SAMPLE(?u) as ?url) {
+            ?uri foaf:homepage ?u
+        } GROUP BY ?uri
     }
 
     # English title(s)
@@ -40,10 +40,10 @@ SELECT ?prefixes ?titles ?uri ?url ?abstract ?size ?year ?keywords {
     }
 
     # English abstract (just a random one)
-    {
-        SELECT ?abstract {
-            ?uri dct:description ?abstract . FILTER (lang(?abstract) = 'en')
-        } LIMIT 1
+    OPTIONAL {
+        SELECT ?uri (SAMPLE(?abs) as ?abstracts) {
+            ?uri dct:description ?abs . FILTER (lang(?abs) = 'en')
+        } GROUP BY ?uri
     }
 
     # keywords
@@ -53,7 +53,7 @@ SELECT ?prefixes ?titles ?uri ?url ?abstract ?size ?year ?keywords {
         } GROUP BY ?uri
     }
 
-    # size
+    # size (FIXME)
     {
         SELECT (CONCAT(
                 STR(?classes), " classes, ",
@@ -71,7 +71,7 @@ SELECT ?prefixes ?titles ?uri ?url ?abstract ?size ?year ?keywords {
         } ORDER BY DESC(?date) LIMIT 1
     }
 
-    # year of creation
+    # year of creation (FIXME)
     {
         SELECT (YEAR(?creation) AS ?year) {
             ?uri dcat:distribution [ dct:issued ?creation ] .

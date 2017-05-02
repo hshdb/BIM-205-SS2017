@@ -1,0 +1,80 @@
+#
+# SPARQL query to harvest basic data about vocabularies from LOV 
+# via endpoint <http://lov.okfn.org/dataset/lov/sparql>.
+#
+
+PREFIX vann: <http://purl.org/vocab/vann/>
+PREFIX voaf: <http://purl.org/vocommons/voaf#>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dct:  <http://purl.org/dc/terms/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+
+# TODO:
+# - author
+# - languages
+# - license
+
+SELECT ?prefixes ?titles ?uri ?url ?abstract ?size ?year ?keywords {
+    
+    ?uri a voaf:Vocabulary .
+
+    # prefixes
+    {
+        SELECT ?uri (GROUP_CONCAT(?prefix;separator="; ") as ?prefixes) {
+            ?uri vann:preferredNamespacePrefix ?prefix .
+        } GROUP BY ?uri
+    }
+
+    # homepage url (just a random one)
+    {
+        SELECT ?url {
+            ?uri foaf:homepage ?url
+        } LIMIT 1
+    }
+
+    # English title(s)
+    {
+        SELECT ?uri (GROUP_CONCAT(?title;separator="; ") as ?titles) {
+            ?uri dct:title ?title . FILTER (lang(?title) = 'en') 
+        } GROUP BY ?uri
+    }
+
+    # English abstract (just a random one)
+    {
+        SELECT ?abstract {
+            ?uri dct:description ?abstract . FILTER (lang(?abstract) = 'en')
+        } LIMIT 1
+    }
+
+    # keywords
+    {
+        SELECT ?uri (GROUP_CONCAT(?keyword;separator="; ") as ?keywords) {
+            ?uri dcat:keyword ?keyword
+        } GROUP BY ?uri
+    }
+
+    # size
+    {
+        SELECT (CONCAT(
+                STR(?classes), " classes, ",
+                STR(?properties), ' properties, ',
+                STR(?instances), ' instances (',
+                STR(YEAR(?date)) ,')'
+               ) AS ?size)
+        {
+            ?uri dcat:distribution ?distr . 
+            ?distr dct:issued ?date .
+            ?distr voaf:classNumber ?classes .
+            ?distr voaf:propertyNumber ?properties .
+            ?distr voaf:instanceNumber ?instances .
+            # TODO: dct:language
+        } ORDER BY DESC(?date) LIMIT 1
+    }
+
+    # year of creation
+    {
+        SELECT (YEAR(?creation) AS ?year) {
+            ?uri dcat:distribution [ dct:issued ?creation ] .
+        } ORDER BY ASC(?creation) LIMIT 1
+    }
+} 

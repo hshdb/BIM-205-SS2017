@@ -44,3 +44,9 @@ eingeteilt:
 * **Präsentation** der Sammlung von KOS in BARTOC
 
 Zur internen Kommunikation gibt es ein geschlossenes Projekt in der Moodle-Instanz der HsH: <https://moodle.hs-hannover.de/course/view.php?id=5307>
+
+## Ergebnisse
+
+* [BARTOC-Flyer](bartoc-flyer.pdf)
+* ...
+

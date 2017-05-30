@@ -47,6 +47,7 @@ Zur internen Kommunikation gibt es ein geschlossenes Projekt in der Moodle-Insta
 
 ## Ergebnisse
 
-* [BARTOC-Flyer](bartoc-flyer.pdf)
+* Neues [BARTOC-Logo](bartoc-logo.svg)
+* [BARTOC-Flyer](bartoc-flyer.pdf) (Stand 23.5.2017)
 * ...
 
